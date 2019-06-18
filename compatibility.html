@@ -43,42 +43,6 @@
       <section class="gh-section gh-logo-section">
         <div class="inner gh-section-content gh-bulleted-compare"> 
         
-          <a name="heroku"></a>
-          <h4>Akkeris vs Heroku</h4>
-          <ul>
-            <li>Both platforms focused on developer experience, rather than operations point of view.</li>
-            <li>Heroku has less flexibility in front-door, less flexibility in infrastructure networking.</li>
-            <li>Heroku has no on-premises installation, completely software as a service model.</li>
-            <li>In ability to add custom brokers or shared secrets via Vault<sup>&copy;</sup>.</li>
-            <li>Heroku contains the most addons and services by far.</li>
-            <li>Akkeris is docker and CNCF focused, Heroku is buildpack (special sauce) focused, but does support Docker.</li>
-            <li>Heroku has limited abilities to integrate with private networks.</li>
-            <li>Heroku has a rich set of capabilities and covers development tools all the way to scaling.</li>
-          </ul>
-
-          <a name="cf"></a>
-          <h4>Cloud Foundary vs Akkeris</h4>
-          <ul>
-            <li>Akkeris easily integrates into kubernetes and docker.</li>
-            <li>Cloud Foundary has less integrated support for log shuttling and log sessions.</li>
-            <li>Some of the commercial versions of Cloud Foundary can be fairly expensive and vary greatly in their capabilities.</li>
-            <li>Akkeris has the ability to route multiple apps behind a website, purchase certificates, order domains and more.</li>
-            <li>No native integrations with front-door (BigIP F5, Nginx, etc).</li>
-            <li>Akkeris is built to be more extensible with custom features and addon capabilities.</li>
-            <li>With both a rich UI and CLI toolset in addtion to focusing on a larger lifecycle of an engineers needs, Akkeris aims to provide not just a deployment system, but a full developer pluggable toolkit.</li>
-            <li>Cloud foundary is more mature and has been in market longer than almost any platform.</li>
-          </ul>
-
-          <a name="cf"></a>
-          <h4>Akkeris vs Kubernetes</h4>
-          <ul>
-            <li>Akkeris sits on top of kubernetes to handle more aspects of an application life cycle than just its runtime.</li>
-            <li>Akkeris supports addons to allow engineers to request not just runtime, but services such as postgres, or mysql.</li>
-            <li>Support for routing and front-door http, domains, tls certificates allows anyone to immediately create a site and route it to any app.</li>
-            <li>Kuberentes is focused on application runtime; only one component of an application life cycle.</li>
-            <li>While akkeris sits on top of kuberentes it does not impose limitations on how other tools can integrate with it, allowing the best of both worlds.</li>
-          </ul>
-
           <table class="gh-compare-table">
             <thead>
               <tr>
@@ -199,6 +163,42 @@
               <tr><td>Workers</td> <td class="yes"></td>   <td class="no"></td>    <td class="yes"></td> <td class="no"></td></tr>
             </tbody>
           </table>
+          <a name="heroku"></a>
+          <h4>Akkeris vs Heroku</h4>
+          <ul>
+            <li>Both platforms focused on developer experience, rather than operations point of view.</li>
+            <li>Heroku has less flexibility in front-door, less flexibility in infrastructure networking.</li>
+            <li>Heroku has no on-premises installation, completely software as a service model.</li>
+            <li>In ability to add custom brokers or shared secrets via Vault<sup>&copy;</sup>.</li>
+            <li>Heroku contains the most addons and services by far.</li>
+            <li>Akkeris is docker and CNCF focused, Heroku is buildpack (special sauce) focused, but does support Docker.</li>
+            <li>Heroku has limited abilities to integrate with private networks.</li>
+            <li>Heroku has a rich set of capabilities and covers development tools all the way to scaling.</li>
+          </ul>
+
+          <a name="cf"></a>
+          <h4>Cloud Foundary vs Akkeris</h4>
+          <ul>
+            <li>Akkeris easily integrates into kubernetes and docker.</li>
+            <li>Cloud Foundary has less integrated support for log shuttling and log sessions.</li>
+            <li>Some of the commercial versions of Cloud Foundary can be fairly expensive and vary greatly in their capabilities.</li>
+            <li>Akkeris has the ability to route multiple apps behind a website, purchase certificates, order domains and more.</li>
+            <li>No native integrations with front-door (BigIP F5, Nginx, etc).</li>
+            <li>Akkeris is built to be more extensible with custom features and addon capabilities.</li>
+            <li>With both a rich UI and CLI toolset in addtion to focusing on a larger lifecycle of an engineers needs, Akkeris aims to provide not just a deployment system, but a full developer pluggable toolkit.</li>
+            <li>Cloud foundary is more mature and has been in market longer than almost any platform.</li>
+          </ul>
+
+          <a name="cf"></a>
+          <h4>Akkeris vs Kubernetes</h4>
+          <ul>
+            <li>Akkeris sits on top of kubernetes to handle more aspects of an application life cycle than just its runtime.</li>
+            <li>Akkeris supports addons to allow engineers to request not just runtime, but services such as postgres, or mysql.</li>
+            <li>Support for routing and front-door http, domains, tls certificates allows anyone to immediately create a site and route it to any app.</li>
+            <li>Kuberentes is focused on application runtime; only one component of an application life cycle.</li>
+            <li>While akkeris sits on top of kuberentes it does not impose limitations on how other tools can integrate with it, allowing the best of both worlds.</li>
+          </ul>
+
 
         </div>
       </section>
