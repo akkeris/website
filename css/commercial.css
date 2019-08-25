@@ -1,0 +1,257 @@
+.gh-pricing-table h2 {
+    margin: 15px 0 0;
+}
+
+.gh-price {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto 10px;
+}
+
+.gh-price .dollar {
+    margin-top: 5px;
+    color: #738a94;
+}
+
+.gh-price .number {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.gh-price-desc {
+    color: #5c7078;
+    font-size: 1.3rem;
+    line-height: 1.3em;
+}
+
+.gh-section-journalism-mission svg g {
+    stroke: #3db0ef
+}
+
+.gh-section-journalism-mission h2 {
+    max-width: 770px;
+    color: #3db0ef
+}
+
+.gh-bulleted-compare h4 {
+    text-align:left;
+}
+.gh-bulleted-compare ul li {
+    text-align:left;
+}
+
+.gh-section-journalism-mission h3 {
+    z-index: 4;
+    margin-top: .5rem;
+    margin-bottom: .5rem;  
+}
+
+.gh-pricing-table-wrapper {
+    margin: 0 -4vw;
+    border: 1px solid #e6eff4;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0 rgba(0,0,0,.12),0 10px 70px -10px rgba(0,0,0,.08);
+}
+
+.gh-pricing-table {
+    position: relative;
+    display: table;
+    padding: 2rem;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-bottom: none;
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    background-color: #fff;
+    border-radius: 10px;
+    table-layout: fixed;
+}
+
+.gh-pricing-table tr {
+    border-top: 1px solid #e6eff4;
+}
+
+.gh-pricing-table-noborder {
+    border: none!important;
+}
+
+.gh-pricing-table tr.gh-pricing-category {
+    background: #f8fafc;
+}
+
+.gh-pricing-table td:not(.gh-pricing-table-nopad):first-child {
+    border-left: none;
+    text-align: left;
+}
+
+td.gh-pricing-illu-container {
+    position: relative;
+}
+
+.gh-pricing-table td {
+    padding: 23px 25px;
+    border-left: 1px solid #e6eff4;
+    color: #343f44;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.gh-pricing-illu, .gh-pricing-illu-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* height: 400%; */
+    /* width: 200%; */
+}
+
+.gh-pricing-illu-background {
+    top: 0;
+    min-height: 420px;
+    /* background-color: #006398; */
+    border-top-left-radius: 10px;
+    animation: pulse 20s infinite alternate;
+    background-image: url(/images/sailing.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.gh-pricing-table td.price {
+    vertical-align: top;
+}
+
+.gh-pricing-v2 #gh-pricing-mobilenav-selfhosted, .gh-pricing-v2 .gh-pricing-table-noborder td:nth-child(2), .gh-pricing-v2 .gh-pricing-table-wrapper td:nth-child(2) {
+    display: none;
+}
+
+.gh-pricing-table-nopad {
+    padding: 0!important;
+}
+
+.gh-pricing-table-valign-top {
+    vertical-align: top!important;
+}
+
+.gh-pricing-table-divider {
+    display: block;
+    margin: 0 auto 1.5rem;
+    width: 35px;
+    height: 2px;
+    background-color: #c5d2d9;
+}
+
+.gh-pricing-quicklist {
+    display: inline-block;
+    margin: 3px auto 0;
+    padding: 0;
+    color: #343f44;
+    font-size: 1.35rem;
+    line-height: 1.5em;
+    font-weight: 500;
+    text-align-last: left;
+    list-style: none;
+}
+
+.gh-pricing-quicklist li {
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    padding: 0;
+}
+
+.gh-pricing-table td:nth-child(2) .gh-pricing-quicklist svg {
+    fill: #a6bac5;
+}
+
+.gh-pricing-quicklist svg {
+    margin: 0 5px 1px 0;
+    width: 15px;
+    height: 15px;
+    fill: #86ac28;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.gh-pricing-table tr {
+    border-top: 1px solid #e6eff4;
+}
+
+td.gh-pricing-illu-container {
+    position: relative;
+}
+
+.gh-pricing-table-valign-top {
+    vertical-align: top!important;
+}
+
+.gh-pricing-table tr.gh-pricing-category {
+    background: #f8fafc;
+}
+
+.gh-pricing-table td.em-text p {
+    margin: 20px 0 5px;
+    color: #5c7078;
+    line-height: 1.5em;
+}
+
+.gh-pricing-table tr.gh-pricing-category td {
+    font-weight: 700;
+    padding: 20px 25px;
+}
+
+.gh-btn-block {
+    display: block;
+    width: 100%;
+}
+
+.gh-btn {
+    display: inline-block;
+    outline: none;
+    border: 1px solid #cbdfeb;
+    color: #738a94;
+    text-decoration: none!important;
+    user-select: none;
+    fill: #738a94;
+    border-radius: 5px;
+    transition: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.gh-pricing-help {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.gh-pricing-help svg {
+    display: flex;
+    fill: #afc1cb;
+}
+
+.hidden {
+    display: none!important;
+}
+
+.gh-pricing-check svg {
+    width: 25px;
+    height: 25px;
+    fill: #96c02d;
+}
+
+.gh-pricing-heart svg {
+    position: relative;
+    top: 3px;
+    width: 23px;
+    height: 23px;
+    fill: #f05230;
+}

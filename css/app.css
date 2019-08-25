@@ -1,11 +1,85 @@
 
 * {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: SanFrancisco, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@font-face {
+  font-family: 'SanFrancisco';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../webfonts/sf-ultrathin.ttf") format("truetype"); 
+}
+
+@font-face {
+  font-family: 'SanFrancisco';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../webfonts/sf-thin.ttf") format("truetype"); 
+}
+
+@font-face {
+  font-family: 'SanFrancisco';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../webfonts/sf-regular.ttf") format("truetype"); 
+}
+
+@font-face {
+  font-family: 'SanFrancisco';
+  font-style:italic;
+  font-weight: 400;
+  src: url("../webfonts/sf-regular-italic.ttf") format("truetype"); 
+}
+
+@font-face {
+  font-family: 'SanFrancisco';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../webfonts/sf-medium.ttf") format("truetype"); 
+}
+
+@font-face {
+  font-family: 'SanFrancisco';
+  font-style: italic;
+  font-weight: 500;
+  src: url("../webfonts/sf-medium-italic.ttf") format("truetype"); 
+}
+
+@font-face {
+  font-family: 'SanFrancisco';
+  font-style: normal;
+  font-weight: bold;
+  src: url("../webfonts/sf-bold.ttf") format("truetype"); 
+}
+
+@font-face {
+  font-family: 'SanFrancisco';
+  font-style: italic;
+  font-weight: bold;
+  src: url("../webfonts/sf-bold-italic.ttf") format("truetype"); 
+}
+
+.gh-foot-mast-love > img.squirrel {
+  min-width: 10vw;
+  max-width: 150px;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.gh-commercial {
+  background-color:#f7fafc;
+  border-bottom: 1px solid #e0e6ea
 }
 
 .gh-mainhead, .gh-subhead {
-    font-family: 'Heebo', sans-serif;
+    font-family: SanFrancisco, sans-serif;
 }
+
+.gh-logo-section .gh-section-content > p {
+    margin-bottom: 0.5em;
+}
+
+.gh-logo-section div a img {margin: 0 1em;filter: grayscale(1);opacity: 0.65;}
 
 .gh-nav-logo img {
     width: 25px;
@@ -15,7 +89,7 @@
 
 /* color:#24292e; */
 .gh-nav-logo {
-    font-family: 'Gugi', cursive;
+    font-family: 'Gugi', SanFrancisco;
     font-size:1.5em;
     /* font-weight: 100 !important; */
 }
@@ -65,7 +139,7 @@ img {
 
 html {
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: SanFrancisco, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -213,7 +287,6 @@ body,html {
 
 body {
     color: #52636b;
-    /*font-family: Whitney SSm A,Whitney SSm B,sans-serif;*/
     font-size: 1.45rem;
     line-height: 1.6em;
     font-weight: 400;
@@ -223,7 +296,7 @@ body {
     background: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -moz-font-feature-settings: "liga" on
+    -moz-font-feature-settings: "liga" on;
 }
 
 ::-moz-selection {
@@ -675,10 +748,18 @@ p+p>.gh-morelink {
 .motto {
     display:block;
     text-align:center;
-    margin-top:6em;
+    margin-top: 4em;
+    margin-bottom: 0;
 }
 
 @media (max-width: 1040px) {
+    .gh-features-api-desc, .gh-codebox-content {
+      box-sizing: content-box;
+      margin: 0vw 4vw;
+    }
+    .gh-navbar-compare {
+        display:none;
+    }
     .gh-signupbox {
         margin:0
     }
@@ -689,6 +770,9 @@ p+p>.gh-morelink {
 }
 
 @media (max-width: 620px) {
+    .gh-navbar-compare {
+        display:none;
+    }
     .gh-signupbox {
         -ms-flex-direction:column;
         flex-direction: column;
@@ -753,6 +837,9 @@ p+p>.gh-morelink {
 }
 
 @media (max-width: 550px) {
+    .gh-navbar-compare {
+        display:none;
+    }
     .gh-form-group {
         max-width:100%
     }
@@ -1485,9 +1572,9 @@ svg.retry-animated {
     position: absolute;
     width: 20px;
     height: 1px;
-    background-color: #738a94;
+    background-color: white;
     border-radius: 4px;
-    transition: transform .15s ease
+    transition: transform .15s ease;
 }
 
 .hamburger-inner:after,.hamburger-inner:before {
@@ -1542,6 +1629,19 @@ svg.retry-animated {
     transform: rotate(-90deg)
 }
 
+.gh-mobilehead-open .gh-mobilenavbar .gh-nav-logo {
+  color:#343f44;
+  margin-top: 0;
+  text-decoration: none;
+}
+.gh-mobilehead-open .gh-mobilenavbar .gh-nav-logo img {
+  filter: invert(0.65);
+}
+
+.gh-mobilehead-open .gh-mobilenavbar .gh-login-link {
+  color: #343f44;
+}
+
 .gh-hero {
     position: relative;
     display: -ms-flexbox;
@@ -1557,7 +1657,7 @@ svg.retry-animated {
 }
 .gh-empty-hero {
     height: 10px !important;
-    padding: 55px !important;
+    padding: 35px !important;
 }
 
 .gh-compare-table {
@@ -2737,11 +2837,11 @@ svg.retry-animated {
 .gh-head {
     position: relative;
     z-index: 900;
-    margin-bottom: 40px;
+    margin-bottom: 1em;
     padding: 0 4vw;
     width: 100%;
     border-bottom: 1px solid #e5eff5;
-    background: hsla(0,0%,100%,.97)
+    background: hsla(0,0%,100%,.97);
 }
 
 @media (max-width: 600px) {
@@ -2765,15 +2865,10 @@ svg.retry-animated {
     align-items: center
 }
 
-.gh-nav-logo {flex-shrink: 0;display: -ms-flexbox!important;display: flex!important;-ms-flex-align: center;align-items: center;color: #738a94;letter-spacing: -1px;font-size: 32px;padding-right: 12px !important;margin-top: -1.25px;}
+.gh-nav-logo {flex-shrink: 0;display: -ms-flexbox!important;display: flex!important;-ms-flex-align: center;align-items: center;color: white;letter-spacing: -1px;font-size: 32px;padding-right: 12px !important;margin-top: -1.25px;}
 
 .gh-nav-item.gh-nav-logo:hover {
     color: inherit
-}
-
-.gh-nav-logo .ghost-svg {
-    width: auto;
-    height: 25px
 }
 
 .gh-nav-logo-suffix {
@@ -2906,12 +3001,17 @@ svg.retry-animated {
 }
 
 .gh-head-transparent .gh-hero {
-    margin-top: calc(-6vw - 55px);
+    margin-top: calc(-85px);
 }
 
 @media (max-width: 660px) {
     .gh-head-transparent .gh-hero {
-        margin-top:-20px
+        padding-top: 120px;
+        margin-top: calc(-10vw - 55px);
+    }
+    .gh-head-transparent .gh-empty-hero {
+        padding-top: 120px;
+        margin-top: calc(-10vw - 41px);
     }
 }
 
@@ -2936,12 +3036,12 @@ svg.retry-animated {
     overflow: hidden;
     width: 100%;
     height: 48px;
-    border-bottom: 1px solid rgba(0,0,0,.05);
-    background: hsla(0,0%,100%,.97);
-    box-shadow: inset 0 -1px 0 0 #fff,0 1px 5px rgba(0,0,0,.02);
+    /* border-bottom: 1px solid rgba(0,0,0,.05); */
+    /* background: hsla(0,0%,100%,.97); */
+    /* box-shadow: inset 0 -1px 0 0 #fff,0 1px 5px rgba(0,0,0,.02); */
     transition: all .5s ease-out,background 1s ease-out;
     transition-delay: .2s;
-    -webkit-backdrop-filter: blur(3px)
+    -webkit-backdrop-filter: blur(3px);
 }
 
 .gh-mobilenavbar {
@@ -2970,12 +3070,18 @@ svg.retry-animated {
 }
 
 .gh-mobilenavbar .gh-nav-logo {
-    position: absolute;
-    top: 0;
-    right: 50%;
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 50%; */
     display: block;
-    margin-right: -33px;
-    padding: 13px 0
+    /* margin-right: -33px; */
+    padding: 7.5px 0;
+    /* align-items: center; */
+    flex-grow: 10;
+    /* margin-top: 0; */
+    text-align: center;
+    color: white;
+    text-decoration: none;
 }
 
 .gh-mobilenavbar .ghost-svg {
@@ -2986,7 +3092,8 @@ svg.retry-animated {
 .gh-mobilenavbar .gh-login-link {
     display: block;
     padding: 14px 15px;
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    color: white;
 }
 
 .gh-mobilenavbar .gh-login-link:hover {
@@ -3003,11 +3110,11 @@ svg.retry-animated {
     color: #738a94;
     font-size: 1.8rem;
     line-height: 4.8rem;
-    font-weight: 200;
+    font-weight: 400;
     opacity: 0;
     transition: transform .3s cubic-bezier(.4,.01,.165,.99),opacity .2s cubic-bezier(.4,.01,.165,.99);
     transition-delay: .4s;
-    transform: scale(1.1) translateY(-25px)
+    transform: scale(1.1) translateY(-25px);
 }
 
 .gh-mobilemenu a:first-child {
@@ -3062,7 +3169,8 @@ svg.retry-animated {
     margin: 0;
     height: 100vh;
     transition: all .3s ease-in,background .5s ease-in;
-    transition-delay: .3s
+    transition-delay: .3s;
+    background-color: white;
 }
 
 .gh-mobilehead-open .gh-mobilemenu a {
@@ -3105,7 +3213,7 @@ svg.retry-animated {
 
 @media (max-width: 660px) {
     .gh-viewport {
-        padding-top:68px
+        padding-top:68px;
     }
 
     .gh-head {
@@ -3118,17 +3226,17 @@ svg.retry-animated {
 }
 
 .gh-main {
-    padding: 0 4vw
+    padding: 0 4vw;
 }
 
 .gh-section {
     margin: 0 -4vw;
-    padding: 60px 4vw
+    padding: 60px 4vw;
 }
 
 @media (max-width: 600px) {
     .gh-section {
-        padding:10vw 4vw
+        padding:10vw 4vw;
     }
 }
 
@@ -3368,9 +3476,9 @@ svg.retry-animated {
 }
 .gh-foot-mast-love {
     text-align:center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 24px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* margin-top: 24px; */
 }
 .gh-foot-content {
     padding-top: 20px;
@@ -3435,6 +3543,7 @@ svg.retry-animated {
     /* display: inline-block; */
     /* width: auto; */
     /* height: 25px; */
+    margin-left: 3px;
 }
 
 .gh-foot-mast-text {
@@ -3487,14 +3596,15 @@ svg.retry-animated {
 
 .gh-foot-social {
     display: -ms-flexbox;
-    display: flex;
+    /* display: flex; */
     -ms-flex-align: center;
-    align-items: center
+    /* align-items: center; */
+    text-align: center;
 }
 
 .gh-foot-social a {
-    display: block;
-    padding: 7px
+    /* display: block; */
+    padding: 7px;
 }
 
 .gh-foot-social a:first-of-type {
@@ -3879,6 +3989,9 @@ svg.retry-animated {
 }
 
 @media (max-width: 860px) {
+    .gh-navbar-compare {
+        display:none !important;
+    }
     .gh-page-title:hover {
         display:inline-block;
         cursor: pointer
@@ -4424,19 +4537,19 @@ pre[class*=language-] {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 4vw
+    margin-top: 4vw;
 }
 
 .gh-features-developers-architecture-desc {
     -ms-flex: 0 0 350px;
     flex: 0 0 450px;
-    height: 300px;
+    /* height: 300px; */
 }
 
 .gh-features-developers-architecture-diagram {
     margin-left: 70px;
     max-width: 650px;
-    height: 300px;
+    /* height: 300px; */
 }
 
 @media (max-width: 1000px) {
@@ -4454,7 +4567,7 @@ pre[class*=language-] {
 
     .gh-features-developers-architecture-desc {
         margin: 4vw auto 0;
-        max-width: 720px
+        max-width: 720px;
     }
 }
 
@@ -4557,7 +4670,8 @@ pre[class*=language-] {
 
 .gh-features-api-desc {
     margin-bottom: 40px;
-    max-width: 800px
+    max-width: 800px;
+    /* padding: 2vw 4vw; */
 }
 
 .gh-features-api .gh-codebox {
@@ -4621,7 +4735,7 @@ pre[class*=language-] {
 }
 
 .gh-codebox-content {
-    padding: 18px 0 0 60px
+    padding: 18px 0 0 60px;
 }
 
 .gh-codebox-nav {
@@ -5388,12 +5502,12 @@ pre[class*=language-] {
     flex-wrap: wrap;
     -ms-flex-align: stretch;
     align-items: stretch;
-    margin: 0 -10px
+    /* margin: 0 -10px */
 }
 
 @media (min-width: 1300px) {
     .gh-pricing-table {
-        margin:0 -5vw
+        /* margin:0 -5vw */
     }
 }
 
@@ -7423,25 +7537,3 @@ pre[class*=language-] {
         transform: translateY(0)
     }
 }
-
-.gh-section-journalism-mission svg g {
-    stroke: #3db0ef
-}
-
-.gh-section-journalism-mission h2 {
-    max-width: 770px;
-    color: #3db0ef
-}
-
-.gh-bulleted-compare h4 {
-    text-align:left;
-}
-.gh-bulleted-compare ul li {
-    text-align:left;
-}
-
-.gh-section-journalism-mission h3 {
-    z-index: 4;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-   
