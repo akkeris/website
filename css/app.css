@@ -1655,6 +1655,41 @@ svg.retry-animated {
     background: radial-gradient(circle farthest-corner at right bottom,#e9f0f2 0,#fcfeff 100%);
     box-shadow: inset 0 -1px 0 rgba(0,0,0,.04)
 }
+
+main.gh-main.floral {
+    min-height: 1250px;
+    background: url(/images/floral.png), linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,1));
+    background-blend-mode: saturation;
+}
+
+section.gh-section.white {
+    background-color: white;
+    margin: 2em auto;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 7px 0px rgba(0,0,0,0.5);
+    max-width: 1040px;
+}
+
+@media (max-width:800px) {
+  main.gh-main.floral {
+    margin:0;
+    padding: 0;
+  }
+  section.gh-section.white {
+      background-color: white;
+      margin: 2em 0em;
+      padding:0;
+      border-radius: 0;
+      box-shadow: 0 2px 7px 0px rgba(0,0,0,0.5);
+  }
+}
+
+.gh-transparent-hero {
+    background: transparent !important;
+    height: 10px !important;
+    padding: 35px !important;
+}
+
 .gh-empty-hero {
     height: 10px !important;
     padding: 35px !important;
@@ -4148,7 +4183,7 @@ pre[class*=language-] {
     height: auto;
     color: #fff;
     text-align: center;
-    /*background: linear-gradient(to right bottom, rgb(204, 60, 99) 50%, rgb(63,199,225) 70%);*/ /*#e72a7e*/
+    /* background: linear-gradient(to right bottom, rgb(204, 60, 99) 50%, rgb(63,199,225) 70%); */ /*#e72a7e*/
     background: linear-gradient(to right, rgb(174,58,152) 0%, rgb(206,57,98) 100%);
 }
 
@@ -4624,7 +4659,7 @@ pre[class*=language-] {
 
 .gh-features-theming-desc {
     margin-left: 70px;
-    padding: 40px 0
+    padding: 40px 0;
 }
 
 .gh-features-theming-desc h3 {
@@ -5134,12 +5169,19 @@ pre[class*=language-] {
     .gh-features-2browsers .gh-features-2browsers-bottom {
         display: none
     }
-
+    .gh-features-theming-wrapper {
+        flex-flow: wrap;
+    }
     .gh-browser {
         max-width: 720px;
-        width: 100%
+        width: 100%;
+        /* display: block; */
+        /* width: 100%; */
     }
-
+    .gh-features-theming-desc {
+        margin-left: 0;
+        padding:4rem 0;
+    }
     .gh-features-2browsers-caption {
         position: static;
         margin-top: 10px
