@@ -5236,4 +5236,3 @@ $(document).ready(function() {
         $(".gh-codebox-users").addClass("gh-codebox-active")
     })
 });
-//# sourceMappingURL=ghost.js.map

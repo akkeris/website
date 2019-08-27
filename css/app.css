@@ -609,7 +609,7 @@ p code {
 
 .gh-header {
     padding: 30px 0 60px;
-    text-align: center
+    text-align: center;
 }
 
 .gh-header h1,.gh-mainhead {
@@ -7578,4 +7578,10 @@ pre[class*=language-] {
     to {
         transform: translateY(0)
     }
+}
+
+
+.asciinema {
+    max-width: 600px;
+    margin: 0 auto;
 }
