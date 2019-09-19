@@ -7585,3 +7585,43 @@ pre[class*=language-] {
     max-width: 600px;
     margin: 0 auto;
 }
+
+.gh-header.features h2 input[type=radio] {
+    display: none;
+}
+
+.gh-header.features h2 input[type=radio] + label {
+  cursor:pointer;
+  color: rgba(255,255,255,0.65);
+  /* display: inline-block; */
+  padding: 0.25em 0.75em;
+  border-bottom: 1px solid rgba(255,255,255,0.65);
+  margin: 0;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+}
+
+.gh-header.features h2 input[type=radio]:not(:checked) + label {
+  color: rgba(255,255,255,0.65);
+}
+
+.gh-header.features h2 input[type=radio]:checked + label {
+  color: rgba(255,255,255,0.85);
+  border-bottom: 1px solid rgba(255,255,255,0.85);
+}
+
+.gh-header.features h2 {
+    display: inline-block;
+    margin: 0 -2px;
+    padding: 0 0 15px 0;
+    outline: 0;
+}
+
+body.gh-head-transparent.gh-foot-floating.black {
+    color: rgba(255,255,255,0.9);
+    background-color: rgb(18,19,20);
+}
+
+body.black h1, h2, h3, h4, h5, h6 {
+    color: rgba(255,255,255,0.85);
+}
