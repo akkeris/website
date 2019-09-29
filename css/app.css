@@ -319,7 +319,8 @@ hr {
 }
 
 audio,canvas,iframe,img,svg,video {
-    vertical-align: middle
+    vertical-align: middle;
+    /* height: 332px !important; */
 }
 
 fieldset {
@@ -3266,7 +3267,7 @@ section.gh-section.white {
 
 .gh-section {
     margin: 0 -4vw;
-    padding: 60px 4vw;
+    padding: 30px 4vw;
 }
 
 @media (max-width: 600px) {
@@ -5221,7 +5222,7 @@ pre[class*=language-] {
 }
 
 .gh-deskmock-viewport {
-    max-width:650px;
+    /* max-width:650px; */
     border-radius: 0 0px 6px 6px;
 }
 
@@ -5382,7 +5383,7 @@ pre[class*=language-] {
 }
 
 .gh-features-seo-graphic {
-    width: 440px;
+    width: 100%;
     background: #000;
     border-radius: 0 0px 6px 6px;
     box-shadow: 0 0 1px rgba(0,0,0,.07),0 2px 5px rgba(0,0,0,.03);
@@ -7582,11 +7583,223 @@ pre[class*=language-] {
 
 
 .asciinema {
-    max-width: 600px;
+    max-width: 750px;
+    margin: 0 auto 65px auto;
+    box-shadow: 0 0 100px rgba(0,0,0,1);
+}
+
+.metrics-feature {
+    box-shadow: 5px 0 100px rgba(0,0,0,1);
+    border-radius: 5px;
+    margin-top:15px;
+}
+
+.asciinema iframe {
+    height: 332px !important;
+}
+
+.badge-caption:first-child {
+    top: auto;
+    bottom: 100%;
+}
+
+.features .badges {
+    text-align: left;
+}
+
+.badge {
+    margin-right: 1.5em;
+    color: #111;
+    display: inline-block;
+    font-size: 20px;
+    min-width: 5em;
+    position: relative;
+    z-index: 1;
+    margin-bottom:2em;
+}
+
+.gh-hero.gh-features-head.gh-header-features {
+    background: linear-gradient(to bottom, rgb(174,58,152, 0) 96%, rgb(206,57,98, 1) 100%);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(29,29,31,1) !important;
+}
+
+.badge-content {
+    text-align:left;
+    margin: 1em 0;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    position: relative;
+    z-index: 1;
+    color: #63636e;
+    font-size: 14px;
+    line-height: 1.28583;
+    font-weight: 400;
+    letter-spacing: -.016em;
+}
+
+.badge-value {
+    text-align:left;
+    color: #fff;
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -.009em;
+}
+
+.badge-unit {
+    text-align:left;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0em;
+}
+
+.badge-caption {
+    text-align:left;
+    font-size: 14px;
+    line-height: 1.28583;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    color: #63636e;
+
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+}
+
+.feature-section-2 .features p,
+.feature-section-3 .features p {
+    color: #63636e;
+    font-size: 21px;
+    line-height: 1.38105;
+    font-weight: 400;
+    letter-spacing: .011em;
+    text-align:left;
+}
+
+.feature-section-3 .features p {
+    margin-top: 64px;
+    padding: 32px 0;
+    text-align:center;
+    color: #a3a3ae !important;
+}
+
+.feature-section-1.gh-section {
+    background-image: radial-gradient(ellipse at bottom, rgb(25, 28, 44), transparent);
+}
+
+.feature-section-2.gh-section {
+    /*background-image:radial-gradient(ellipse at bottom, rgb(28, 27, 29), transparent);*/
+    background-image: radial-gradient(ellipse at top, rgb(36, 36, 44), transparent);
+}
+
+.feature-section-3.gh-section {
+    /*background-image:radial-gradient(ellipse at bottom, rgb(28, 27, 29), transparent);*/
+    background-image: radial-gradient(ellipse at center, rgb(63, 28, 66), transparent 90%);
+}
+
+
+.feature-section-1 .features h1.feature-header {
+    max-width: 50rem;
+    margin: 0 auto 64px auto;
+}
+
+.feature-section-2 .features h1.feature-header {
+    margin: 0 0 64px 0;
+    text-align: left;
+}
+
+.feature-section-2 > .gh-header {
+    padding-left:15vw;
+    padding-right:15vw;
+}
+
+.feature-section-3 .features h1.feature-header {
+    margin: 0 0 96px 0;
+    text-align: left;
+}
+
+.feature-section-3 > .gh-header {
+    padding-left:15vw;
+    padding-right:15vw;
+}
+
+.features h1.feature-header {
+    font-weight: 600;
+    font-size: 64px;
+    letter-spacing: -0.576px;
+}
+
+.feature-section-1 .features h5.feature-header.subtle {
+    max-width: 50rem;
     margin: 0 auto;
 }
 
-.gh-header.features h2 input[type=radio] {
+.feature-section-2 .features h5.feature-header.subtle {
+    text-align: left;
+}
+
+.feature-section-3 .features h5.feature-header.subtle {
+    text-align: left;
+}
+
+.features h5.feature-header.subtle {
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: -0.576px;
+    color:rgb(99, 99, 110);
+    /* text-transform:uppercase; */
+    margin-top: 64px !important;
+}
+
+.feature-section-3 figure {
+    display: inline-block;
+}
+
+.feature-section-3 figure img {
+    width: 80px;
+    margin: 0 10px;
+}
+
+.feature-section-3 figure label {
+    color: #63636e;
+    font-size: 21px;
+    line-height: 1.38105;
+    font-weight: 400;
+    letter-spacing: .011em;
+    text-align:left;
+    display: none;
+}
+
+.features h5.feature-header.pazzaz {
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: -0.576px;
+    background-position: 0 0;
+    background-size:447.969px;
+    background-image:radial-gradient(circle at 15.2832% center, rgb(187, 36, 187), rgb(48, 109, 207) 170%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:transparent;
+    text-align:left;
+    /* text-transform:uppercase; */
+    margin-top: 64px !important;
+}
+
+.flashy-gradient {
+    width:100%;
+    height: 2px;
+    margin-top: 15px;
+    /*background-image: linear-gradient(to left, #2d6ecf,#bc23bb);*/
+    background-image: linear-gradient(to left, rgb(174,58,152), rgb(63,199,225));
+}
+
+.feature-section-1 .gh-header.features h2 input[type=radio] {
     display: none;
 }
 
@@ -7612,9 +7825,14 @@ pre[class*=language-] {
 
 .gh-header.features h2 {
     display: inline-block;
-    margin: 0 -2px;
-    padding: 0 0 15px 0;
+    /* margin: 0 -2px; */
+    margin: 2rem 5rem;
     outline: 0;
+    max-width: 250px;
+    /* border-bottom: 1px solid rgb(45, 48, 64); */
+    padding-bottom: 20px;
+    color: #ffffff;
+    /* text-shadow: 0 0 15px black; */
 }
 
 body.gh-head-transparent.gh-foot-floating.black {

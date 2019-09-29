@@ -23,7 +23,7 @@
           <a href="/" class="gh-nav-logo gh-navbar-item"><img src="images/akkeris-light.png" />akkeris</a>
           <a href="features.html" class="gh-navbar-item">Features</a>
           <a href="getting-started.html" class="gh-navbar-item">Get Started</a>
-          <a href="compare.html" class="gh-navbar-item gh-navbar-compare">Compare</a>
+          <!--<a href="compare.html" class="gh-navbar-item gh-navbar-compare">Compare</a>-->
           <div class="gh-drop gh-more-drop">
             <div class="gh-drop-trigger gh-navbar-item">
               <span> Support <svg viewBox="0 0 26 17" xmlns="http://www.w3.org/2000/svg"><path d="M1.469 2.18l11.5 13.143 11.5-13.143" stroke-width="3" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" /></svg></span>
@@ -32,8 +32,8 @@
               <li><a href="https://docs.akkeris.io/">Documentation</a></li>
               <li><a href="https://docs.akkeris.io/how-akkeris-works.html">How Akkeris Works</a></li>
               <li><a href="https://docs.akkeris.io/architecture/apps-api.html">API Reference</a></li>
-              <li><a href="contribute.html">Contributing <span class="gh-badge">New</span></a></li>
-              <li><a href="faq.html">About &amp; FAQ</a></li>
+              <!--<li><a href="contribute.html">Contributing <span class="gh-badge">New</span></a></li>
+              <li><a href="faq.html">About &amp; FAQ</a></li>-->
             </ul>
           </div>
         </div>
@@ -55,45 +55,138 @@
       <div class="gh-mobilemenu">
         <a href="/" class="active">Home</a>
         <a href="features.html">Features</a>
-        <a href="getting-started.html">Getting Started</a>
-        <a href="compare.html">Compare</a>
+        <!--<a href="getting-started.html">Getting Started</a>-->
+        <!--<a href="compare.html">Compare</a>-->
         <a href="https://docs.akkeris.io">Documentation</a>
         <a href="https://docs.akkeris.io/how-akkeris-works.html">How Akkeris Works</a>
         <a href="https://docs.akkeris.io/architecture/apps-api.html">API Reference</a>
-        <a href="contribute.html">Contributing</a>
-        <a href="faq.html">About &amp FAQ</a>
+        <!--<a href="contribute.html">Contributing</a>
+        <a href="faq.html">About &amp FAQ</a>-->
       </div>
     </header>
 <!-- end header -->
 
     <main class="gh-main" role="main">
-      <header class="gh-hero gh-features-head gh-empty-hero"></header>
-      <section class="gh-section gh-logo-section">
+      <header class="gh-hero gh-features-head gh-header-features gh-empty-hero"></header>
+      <section class="gh-section gh-logo-section feature-section-1">
         <header class="gh-header features">
-            <h1>See it in action</h1>
+            <h5 class="feature-header subtle">Versatile CLI</h1>
+            <h1 class="feature-header">Create apps faster.</h1>
             <div class="asciinema">
-              <script data-rows="20" id="asciicast-TkeV7NRyTsFDit3prhnKFkAWG" src="https://asciinema.org/a/TkeV7NRyTsFDit3prhnKFkAWG.js" async></script>
+              <script id="asciicast-TkeV7NRyTsFDit3prhnKFkAWG" data-cols="200" data-rows="20" theme="solarized-dark" src="https://asciinema.org/a/TkeV7NRyTsFDit3prhnKFkAWG.js?" async></script>
             </div>
-            <h2>
-              <input type="radio" checked id="apps-and-sites" name="tab" value="apps-and-sites">
-              <label for="apps-and-sites">Apps and Sites</label>
+            <h2 class="gh-subhead" id="apps-and-sites-content">
+              Create apps on-demand, and deploy Docker images with ease.
+              <div class="flashy-gradient">&nbsp;</div>
             </h2>
-            <h2>
-              <input type="radio" id="provision-resources" name="tab" value="provision-resources">
-              <label for="provision-resources">Provision Resources</label>
+            <h2 class="gh-subhead" id="provision-resources-content">
+              Websites route back to applications via path-based-routing.
+              <div class="flashy-gradient">&nbsp;</div>
             </h2>
-            <h2>
-              <input type="radio" id="build-from-gitub" name="tab" value="build-from-gitub">
-              <label for="build-from-gitub">Build from Github</label>
+            <br/>
+            <h2 class="gh-subhead" id="build-from-gitub-content">
+              Connect apps to <a href="https://www.github.com">Github</a> and release on new commits.
+              <div class="flashy-gradient">&nbsp;</div>
             </h2>
-            <h2>
-              <input type="radio" id="promote-with-confidence" name="tab" value="promote-with-confidence">
-              <label for="promote-with-confidence">Promote with Confidence</label>
+            <h2 class="gh-subhead" id="promote-with-confidence-content">
+              Pipeline apps together and promote images to production.
+              <div class="flashy-gradient">&nbsp;</div>
             </h2>
-            <p class="gh-subhead" id="apps-and-sites-content">Dynamically provision apps, web sites, and domains.</p>
-            <p class="gh-subhead" id="provision-resources-content">Dynamically provision postgres, mysql, redis, memcached and much more...</p>
-            <p class="gh-subhead" id="build-from-gitub-content">Connect and auto build from sources on Github.</p>
-            <p class="gh-subhead" id="promote-with-confidence-content">Pipeline apps together and promote apps to production.</p>
+        </header>
+      </section>
+      <section class="gh-section gh-logo-section feature-section-2">
+        <header class="gh-header features">
+          <h5 class="feature-header subtle">Better, Faster, Stronger</h1>
+          <h1 class="feature-header">Future proof and performant.</h1>
+
+
+          <div class="badges">
+            <figure class="badge">
+              <div class="badge-content">
+                <span class="badge-caption">Up to</span>
+                <span class="badge-value">16<span class="badge-unit">GB</span></span>
+                <span class="badge-caption">Memory Dynos</span>
+              </div>
+            </figure>
+            <figure class="badge">
+              <div class="badge-content">
+                <span class="badge-caption">With HTTP2</span>
+                <span class="badge-value">39%<span class="badge-unit"></span></span>
+                <span class="badge-caption">lower resp. times</span>
+              </div>
+            </figure>
+            <figure class="badge">
+              <div class="badge-content">
+                <span class="badge-caption">Up to</span>
+                <span class="badge-value">1M<span class="badge-unit">/S</span></span>
+                <span class="badge-caption">log streams</span>
+              </div>
+            </figure>
+          </div>
+
+
+          <img src="images/metrics.png" class="metrics-feature" />
+          <br />
+          <br />
+          <p>Akkeris takes platforms to a new level of capabilities and performance. With built-in support for <a href="https://www.istio.io">Istio</a>, service mesh and HTTP2 it's fast and the future. Stream gigabytes of logs to <a href="https://www.papertrailapp.com">Papertrail</a> or any central logging provider.</p>
+
+        </header>
+      </section>
+      <section class="gh-section gh-logo-section feature-section-3">
+        <header class="gh-header features">
+          <h5 class="feature-header pazzaz">Extendable and Expandable</h1>
+          <h1 class="feature-header">Plugins, Addons, Webhooks and more.</h1>
+
+          <figure>
+            <img src="images/circleci.png" class="third-party-img"/>
+            <label>Circle CI</label>
+          </figure>
+          <figure>
+            <img src="images/opsgenie.png" class="third-party-img"/>
+            <label>Opsgenie</label>
+          </figure>
+          <figure>
+            <img src="images/rollbar.png" class="third-party-img"/>
+            <label>Rollbar</label>
+          </figure>
+          <figure>
+            <img src="images/slack.png" class="third-party-img"/>
+            <label>slack</label>
+          </figure>
+          <figure>
+            <img src="images/msteams.png" class="third-party-img"/>
+            <label>Microsoft Teams</label>
+          </figure>
+
+          <p>Akkeris integrates with a variety of systems to keep you in your workflow. Expand its capabilities through plugins, a powerful way to add new commands to the CLI. </p>
+
+          <div class="gh-deskmock">
+            <div class="gh-deskmock-browser">
+              <div class="gh-deskmock-header">
+                <div class="gh-deskmock-buttons">
+                  <div class="gh-deskmock-button"></div>
+                  <div class="gh-deskmock-button"></div>
+                  <div class="gh-deskmock-button"></div>
+                </div>
+              </div>
+              <div class="gh-deskmock-viewport">
+                <div class="gh-features-seo-graphic">
+                  <pre class="language-bash" data-lang="bash"><code class="language-bash"><span style="color:white">$ aka plugins
+<span style="color:rgb(73,52,207);">:: pg</span>
+  <span style="color:rgb(145,145,225);">Id:</span> <span style="color:white">8f2bd0cf-cdbe-4f92-a59f-57416f6de69b</span>
+  <span style="color:rgb(145,145,225);">Repo:</span> <span style="color:white">https://github.com/akkeris/cli-pg-plugin</span>
+  <span style="color:rgb(145,145,225);">Description:</span> <span style="color:white">A postgresql plugin to help manage Akkeris databases</span>
+
+<span style="color:rgb(73,52,207);">:: memcached</span>
+  <span style="color:rgb(145,145,225);">Id:</span> <span style="color:white">6f38fd0f-561c-47cb-9314-f134050c8720</span>
+  <span style="color:rgb(145,145,225);">Repo:</span> <span style="color:white">https://github.com/akkeris/cli-memcached-plugin</span>
+  <span style="color:rgb(145,145,225);">Description:</span> <span style="color:white">Memcached CLI plugin to flush cache and get stats</span>
+      </code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </header>
       </section>
     </main>
@@ -143,14 +236,14 @@
                 <li><a href="https://twitter.com/intent/tweet?text=%40Akkeris+Hi%21+Can+you+help+me+with+&amp;related=Akkeris" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Tweet at us</a></li>
               </ul>
             </section>
-            <section class="gh-foot-compare gh-foot-col">
+            <!--<section class="gh-foot-compare gh-foot-col">
               <h4>Compare to</h4>
               <ul>
                 <li><a href="/compare.html#heroku">Heroku</a></li>
                 <li><a href="/compare.html#cf">Cloud Foundary</a></li>
                 <li><a href="/compare.html#kube">Kubernetes</a></li>
               </ul>
-            </section>
+            </section>-->
           </nav>
         </div>
         <p class="motto"><i>Ostinato Rigore</i></p>
