@@ -105,6 +105,8 @@
 
 .gh-logo-section div {
     text-align:center;
+    height: 72px;
+    margin-top: 32px;
 }
 
 a,abbr,acronym,address,applet,article,aside,audio,big,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,ul,var,video {
@@ -630,6 +632,9 @@ p code {
     line-height: 1.3em;
     opacity: .7;
     letter-spacing: 0.35px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 660px) {
@@ -4185,7 +4190,7 @@ pre[class*=language-] {
     color: #fff;
     text-align: center;
     /* background: linear-gradient(to right bottom, rgb(204, 60, 99) 50%, rgb(63,199,225) 70%); */ /*#e72a7e*/
-    background: linear-gradient(to right, rgb(174,58,152) 0%, rgb(206,57,98) 100%);
+    background: radial-gradient(ellipse at bottom, rgb(206,57,98) 0%, rgb(174,58,152) 100%);
 }
 
 .gh-features-head-bg6 {
@@ -4206,6 +4211,12 @@ pre[class*=language-] {
     color: #fff;
     opacity: 1;
     text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+    font-weight: 600;
+    font-size: 64px;
+    letter-spacing: -0.576px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gh-features-summary {
@@ -7842,4 +7853,8 @@ body.gh-head-transparent.gh-foot-floating.black {
 
 body.black h1, h2, h3, h4, h5, h6 {
     color: rgba(255,255,255,0.85);
+}
+
+section.gh-section.gh-logo-section {
+    min-height: 200px;
 }
