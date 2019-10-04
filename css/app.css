@@ -103,7 +103,7 @@
     line-height: 2em;
 }
 
-.gh-logo-section div {
+.gh-logo-section > div {
     text-align:center;
     height: 72px;
     margin-top: 32px;
@@ -643,7 +643,7 @@ p code {
     }
 
     .gh-header h1,.gh-mainhead {
-        font-size: 6vw
+        font-size: 52px !important;
     }
 
     .gh-subhead {
