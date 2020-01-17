@@ -7865,7 +7865,7 @@ body.gh-head-transparent.gh-foot-floating.black {
     background-color: rgb(18,19,20);
 }
 
-body.black h1, h2, h3, h4, h5, h6 {
+body.black h1, body.black h2, body.black h3, body.black h4, body.black h5, body.black h6 {
     color: rgba(255,255,255,0.85);
 }
 
