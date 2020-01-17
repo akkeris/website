@@ -4482,7 +4482,7 @@ pre[class*=language-] {
         padding: 0 10px
     }
 
-    .gh-customerlogos,.gh-logo-section {
+    .gh-customerlogos {
         display: none
     }
 }
