@@ -4214,7 +4214,7 @@ pre[class*=language-] {
     font-weight: 600;
     font-size: 64px;
     letter-spacing: -0.576px;
-    max-width: 550px;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -7682,7 +7682,9 @@ pre[class*=language-] {
     left: 0;
 }
 
+
 .feature-section-2 .features p,
+.feature-section-4 .features p,
 .feature-section-3 .features p {
     color: #63636e;
     font-size: 21px;
@@ -7713,6 +7715,12 @@ pre[class*=language-] {
     background-image: radial-gradient(ellipse at center, rgb(63, 28, 66), transparent 90%);
 }
 
+.feature-section-4.gh-section {
+    /*background-image:radial-gradient(ellipse at bottom, rgb(28, 27, 29), transparent);*/
+    background-image: radial-gradient(ellipse at top, #2d2d2d, transparent);
+}
+
+
 
 .feature-section-1 .features h1.feature-header {
     max-width: 50rem;
@@ -7724,6 +7732,11 @@ pre[class*=language-] {
     text-align: left;
 }
 
+.feature-section-4 > .gh-header {
+    text-align: left;
+}
+
+.feature-section-4 > .gh-header,
 .feature-section-2 > .gh-header {
     padding-left:15vw;
     padding-right:15vw;
@@ -7836,6 +7849,7 @@ pre[class*=language-] {
 
 .gh-header.features h2 {
     display: inline-block;
+    text-align: center;
     /* margin: 0 -2px; */
     margin: 2rem 5rem;
     outline: 0;
