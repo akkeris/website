@@ -3420,6 +3420,11 @@ section.gh-section.white {
     .gh-features-developers-architecture-desc {
         flex: 0 0 0px;
     }
+
+    .gh-features-grid .gh-grid {
+        margin:0;
+
+    }
 }
 
 .gh-grid-item svg {
