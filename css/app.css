@@ -3418,7 +3418,7 @@ section.gh-section.white {
     }
 
     .gh-features-developers-architecture-desc {
-        flex: 0 0 0px;
+        flex: 0 0 0px !important;
     }
 
     .gh-features-grid .gh-grid {
