@@ -3416,6 +3416,10 @@ section.gh-section.white {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
+
+    .gh-features-developers-architecture-desc {
+        flex: 0 0 0px;
+    }
 }
 
 .gh-grid-item svg {
